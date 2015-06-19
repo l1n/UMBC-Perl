@@ -39,17 +39,26 @@ sub handler {
     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
     <html><head>
     <title>$errorCode $short</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head><body>
+    <div class="container">
+    <header>
     <h1>$short</h1>
+    </header>
     };
 
     my $body = qq{
+    <main>
     <p>$long</p>
     <p>$helpText</p>
     };
 
     my $footer = qq{
-    <hr>
+    </main>
+    <footer>
     <address>$server Port $port</address>
     <pre>
 };
@@ -58,6 +67,11 @@ sub handler {
     }
     $footer .= qq{
     </pre>
+    </footer>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
     </body></html>
     };
 
