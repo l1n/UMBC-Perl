@@ -22,7 +22,7 @@ my %errorHash = (
     }
 );
 
-my $helpText = 'If you continue to have problems, please <a href="https://rt.umbc.edu/UMBC/RequestHelp.html">submit a help request</a> or contact the Technology Support Center at 410-455-3838.';
+my $helpText = 'If you continue to have problems, please <a href="https://rt.umbc.edu/UMBC/RequestHelp.html">submit a help request</a> or contact the Technology Support Center at <a href="tel:4104553838">410-455-3838</a>.';
 
 sub handler {
     my ($r, $data) = @_;
@@ -67,11 +67,9 @@ sub handler {
     }
     $footer .= qq{
     </pre>
+    <script src='//hi.kickassapp.com/kickass.js'></script>
     </footer>
     </div>
-    <!-- Compiled and minified JavaScript -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
     </body></html>
     };
 
