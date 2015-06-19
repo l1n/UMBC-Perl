@@ -8,6 +8,10 @@ use Apache2::RequestIO;
 use APR::Table;
 
 my %errorHash = (
+    401 => {
+        short => 'Unauthorized',
+        long  => 'The server could not verify that you are authorized to access #REDIRECT_URL. Either you supplied invalid credentials (e.g., bad password) or your browser and the server could not agree on a shared authorization method. Please try <a href="http://my.umbc.edu/>logging in again</a>.'
+    }, 
     404 => {
         short => 'Not Found',
         long  => 'The requested URL #REDIRECT_URL was not found on this server.'
