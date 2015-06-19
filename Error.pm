@@ -46,13 +46,7 @@ sub handler {
     </head><body>
     <div class="container">
     <header>
-    <nav class="top-nav">
-    <div class="container">
-    <div class="nav-wrapper">
-    <h1 class="header center-on-small-only">$short</h1>
-    </div>
-    </div>
-    </nav>
+    <h1>$short</h1>
     </header>
     };
 
