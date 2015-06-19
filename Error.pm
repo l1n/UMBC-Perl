@@ -49,7 +49,7 @@ sub handler {
     <nav class="top-nav">
     <div class="container">
     <div class="nav-wrapper">
-    <a class="page-title">$short</a>
+    <h1 class="header center-on-small-only">$short</h1>
     </div>
     </div>
     </nav>
