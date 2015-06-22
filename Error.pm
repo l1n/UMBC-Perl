@@ -67,7 +67,7 @@ sub handler {
     }
     $footer .= qq{
     </pre>
-    <script src='//hi.kickassapp.com/kickass.js'></script>
+    <a href="javascript:(function%20()%20{var%20s%20=%20document.createElement('script');s.setAttribute('src',%20'http://fontbomb.ilex.ca/js/main.js');document.body.appendChild(s);}());">Destroy this page</a>
     </footer>
     </div>
     </body></html>
